@@ -16,7 +16,7 @@
 | Column         | Type     |
 | -------------- | -------- |
 | Id             | Guid     |
-| Name           | String   |
+| Title          | String   |
 | Description    | String   |
 | EventDate      | DateTime |
 | TotalSeats     | int      |
@@ -55,6 +55,20 @@
 | POST /api/events               | Add Event { Name, Description EventDate, TotalSeats }          | Event              |
 | PUT /api/events/{id}           | Update event by id { Name, Description EventDate, TotalSeats } | Event              |
 | DELETE /api/events/{id}        | Remove event by id                                               | boolean            |
-| GET /api/admin/events/{id}     | Get event details                                               | Event              |
+| GET /api/events/{id}           | Get event details                                               | Event              |
 | POST /api/events/{id}/bookings | Create booking { firstName, lastName }                          | boolean            |
 | GET /api/admin/audit-logs      | Get audit-logs                                                   | List < AuditLog > |
+
+### App init
+
+Create api project template
+
+```
+dotnet new webapi -o src/EventBooking.Api
+```
+
+Trust certificate & add SwaggerUI from NuGet for testing purposes
+
+```
+dotnet dev-certs https --trust
+```
