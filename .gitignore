@@ -2,3 +2,4 @@ backend/src/EventBooking.Api/bin/
 backend/src/EventBooking.Api/obj/
 
 .DS_Store
+.vscode/

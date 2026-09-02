@@ -1,5 +1,7 @@
 ## Tickets booking App
 
+Current app is a fullstack application with database, api server & frontend client served with docker-compose file.
+
 ### Stack:
 
 1. Angular
@@ -59,7 +61,7 @@
 | POST /api/events/{id}/bookings | Create booking { firstName, lastName }                          | boolean            |
 | GET /api/admin/audit-logs      | Get audit-logs                                                   | List < AuditLog > |
 
-### App init
+### App creation steps
 
 Create api project template
 
@@ -71,4 +73,18 @@ Trust certificate & add SwaggerUI from NuGet for testing purposes
 
 ```
 dotnet dev-certs https --trust
+```
+
+Add packages to work with db
+
+```
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+dotnet add package Microsoft.EntityFrameworkCore.Design
+```
+
+Then create init migration & update local db
+
+```
+dotnet ef migrations add init
+dotnet ef database update
 ```
