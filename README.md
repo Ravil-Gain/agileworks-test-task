@@ -15,7 +15,7 @@
 
 | Column         | Type     |
 | -------------- | -------- |
-| Id             | Guid     |
+| Id             | int      |
 | Title          | String   |
 | Description    | String   |
 | EventDate      | DateTime |
@@ -28,7 +28,7 @@
 
 | Column    | Type               |
 | --------- | ------------------ |
-| Id        | Guid               |
+| Id        | int                |
 | EventId   | Guid, FK -> Events |
 | FirstName | String             |
 | LastName  | String             |
@@ -39,9 +39,9 @@
 
 | Column     | Type     |
 | ---------- | -------- |
-| Id         | Guid     |
+| Id         | int      |
 | EntityName | String   |
-| EntityId   | String   |
+| EntityId   | int      |
 | Action     | String   |
 | Details    | String   |
 | CreatedAt  | DateTime |
