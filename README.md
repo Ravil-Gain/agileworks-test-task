@@ -10,11 +10,24 @@ Current app is a fullstack application with database, api server & frontend clie
 4. PostgreSQL
 5. Docker Compose
 
-Tests run: 
+Tests run:
 
 ```
 dotnet test backend/tests/EventBooking.Api.UnitTests/EventBooking.Api.UnitTests.csproj
 ```
+
+Run migrations:
+
+```
+dotnet ef migrations add "NameOfMigration"
+
+dotnet ef database update
+```
+
+
+
+
+
 
 ## DataModel
 
