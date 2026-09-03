@@ -1,5 +1,5 @@
-backend/src/EventBooking.Api/bin/
-backend/src/EventBooking.Api/obj/
+**/bin/
+**/obj/
 
 .DS_Store
 .vscode/
