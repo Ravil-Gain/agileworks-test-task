@@ -2,6 +2,7 @@ using EventBooking.Api.Controllers;
 using EventBooking.Api.Dtos.Event;
 using EventBooking.Api.Interfaces;
 using EventBooking.Api.Models;
+using EventBooking.Api.Types;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;

@@ -1,5 +1,6 @@
 using EventBooking.Api.Dtos.Event;
 using EventBooking.Api.Models;
+using EventBooking.Api.Types;
 
 namespace EventBooking.Api.Interfaces
 {

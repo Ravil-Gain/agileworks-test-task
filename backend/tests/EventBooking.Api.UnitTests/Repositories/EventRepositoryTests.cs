@@ -1,8 +1,8 @@
 using EventBooking.Api.Data;
 using EventBooking.Api.Dtos.Event;
-using EventBooking.Api.Interfaces;
 using EventBooking.Api.Models;
 using EventBooking.Api.Repositories;
+using EventBooking.Api.Types;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 

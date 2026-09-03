@@ -1,6 +1,6 @@
 using EventBooking.Api.Models;
 
-namespace EventBooking.Api.Interfaces
+namespace EventBooking.Api.Types
 {
     public enum UpdateEventStatus
     {

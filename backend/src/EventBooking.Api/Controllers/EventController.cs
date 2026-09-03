@@ -1,6 +1,7 @@
 using EventBooking.Api.Dtos.Event;
 using EventBooking.Api.Interfaces;
 using EventBooking.Api.Mappers;
+using EventBooking.Api.Types;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventBooking.Api.Controllers
