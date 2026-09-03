@@ -14,7 +14,6 @@ Current app is a fullstack application with database, api server & frontend clie
 
 ### Events
 
-
 | Column         | Type     |
 | -------------- | -------- |
 | Id             | int      |
@@ -27,17 +26,15 @@ Current app is a fullstack application with database, api server & frontend clie
 
 ### Bookings
 
-
 | Column    | Type               |
 | --------- | ------------------ |
 | Id        | int                |
-| EventId   | Guid, FK -> Events |
+| EventId   | int?, FK -> Events |
 | FirstName | String             |
 | LastName  | String             |
 | CreatedAt | DateTime           |
 
 ### AuditLogs
-
 
 | Column     | Type     |
 | ---------- | -------- |
@@ -50,16 +47,16 @@ Current app is a fullstack application with database, api server & frontend clie
 
 ## API Endpoints
 
-
-| API                            | Description                                                      | Returns            |
-| ------------------------------ | ---------------------------------------------------------------- | ------------------ |
-| GET /api/events                | Get list of events                                               | List < Event >    |
-| POST /api/events               | Add Event { Name, Description EventDate, TotalSeats }          | Event              |
-| PUT /api/events/{id}           | Update event by id { Name, Description EventDate, TotalSeats } | Event              |
-| DELETE /api/events/{id}        | Remove event by id                                               | boolean            |
-| GET /api/events/{id}           | Get event details                                               | Event              |
-| POST /api/events/{id}/bookings | Create booking { firstName, lastName }                          | boolean            |
-| GET /api/admin/audit-logs      | Get audit-logs                                                   | List < AuditLog > |
+| API                           | Description                                                       | Returns            |
+| ----------------------------- | ----------------------------------------------------------------- | ------------------ |
+| GET /api/events               | Get list of events                                                | List < Event >    |
+| POST /api/events              | Add Event { Title, Description EventDate, TotalSeats }          | Event              |
+| PUT /api/events/{id}          | Update event by id { Title, Description EventDate, TotalSeats } | Event              |
+| DELETE /api/events/{id}       | Remove event by id                                                | Event              |
+| GET /api/events/{id}          | Get event details                                                | Event              |
+| POST /api/bookings/{event_id} | Create booking { firstName, lastName }                           | Booking            |
+| GET /api/bookings/{event_id} | Get Event Bookings                                               | List< Booking >    |
+| GET /api/audit-logs           | Get audit-logs                                                    | List < AuditLog > |
 
 ### App creation steps
 

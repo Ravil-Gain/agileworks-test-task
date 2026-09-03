@@ -13,7 +13,7 @@ namespace EventBooking.Api.Migrations
 {
     [DbContext(typeof(EventBookingDBContext))]
     [Migration("20260902165827_init")]
-    partial class init
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
